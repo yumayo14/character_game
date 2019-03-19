@@ -19,9 +19,22 @@ describe "Character" do
       end
     end
     context "属性が異なる場合" do
-      let(:wind_warrior) { Warrior.new(Sex::Men, Element::Wind, Equipment::Sword }
-      let(:water_warrior) { Warrior.new(Sex::Men, Element::Water, Equipment::Sword }
-      let(:thunder_warrior) { Warrior.new(Sex::Men, Element::Thunder, Equipment::Sword }
+      let(:wind_warrior) { Warrior.new(Sex::Men, Element::Wind, Equipment::Sword) }
+      let(:water_warrior) { Warrior.new(Sex::Men, Element::Water, Equipment::Sword) }
+      let(:thunder_warrior) { Warrior.new(Sex::Men, Element::Thunder, Equipment::Sword) }
+      it "風の場合、アタックポイントが５、ディフェンスポイントが10上昇する" do
+        expect(wind_warrior.element[:offence]).to be 5
+        expect(wind_warrior.element[:defence]).to be 10
+      end
+      it "水の場合、アタックポイントが10、ディフェンスポイントが5上昇する" do
+        expect(water_warrior.element[:offence]).to be 10
+        expect(water_warrior.element[:defence]).to be 5
+      end
+      # 属性による補正をどのようにして書くか
+      it "雷の場合、アタックポイントが15、ディフェンスポイントが0上昇する" do
+        expect(thunder_warrior.element[:offence]).to be 15
+        expect(thunder_warrior.element[:defence]).to be 0
+      end
     end
 
     # it "キャラクターの職業" do
