@@ -1,5 +1,8 @@
 require_relative "job.rb"
-require_relative "status_data.rb"
+require_relative "sex.rb"
+require_relative "element.rb"
+require_relative "equipment.rb"
+require_relative "skill.rb"
 
 class Warrior < Job
   def skill_check
