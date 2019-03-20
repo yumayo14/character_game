@@ -25,3 +25,6 @@ class Element
     0 if @name == "雷"
   end
 end
+
+# 2
+# if文を消す

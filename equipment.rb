@@ -24,3 +24,6 @@ class Equipment
     20 if @name == "グローブ"
   end
 end
+
+# 2
+# if文を消す

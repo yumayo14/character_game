@@ -20,3 +20,6 @@ class Sex
     0
   end
 end
+
+# 2
+# if文を消す
