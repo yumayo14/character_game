@@ -1,3 +1,4 @@
+require 'pry'
 require_relative '../warrior.rb'
 
 # letでbindして、contextの中で値を入れるようにする
@@ -5,29 +6,29 @@ require_relative '../warrior.rb'
 describe "Warrior" do
   let(:warrior) { Warrior.new(sex, element,equipment) }
   context "性別が異なる場合" do
-    let(:element) { Element::Wind }
-    let(:equipment) { Equipment::Sword }
+    let(:element) { Element.new("風") }
+    let(:equipment) { Equipment.new("剣") }
     context "男性の場合" do
-      let(:sex) { Sex::Men }
+      let(:sex) { Sex.new("男性") }
       it "アタックポイントが５ポイント上昇する" do
-        expect(warrior.sex[:offence]).to be 5
+        expect(warrior.sex.offence).to be 5
       end
       it "スキルがギガスラッシュ" do
-        expect(warrior.skill[:sk]).to eq("ギガスラッシュ")
+        expect(warrior.skill.name).to eq("ギガスラッシュ")
       end
       context "属性が異なる場合" do
         context "風の場合" do
-          let(:element) { Element::Wind }
+          let(:element) { Element.new("風") }
           it "アタックポイントが５、ディフェンスポイントが10上昇する" do
-            expect(warrior.element[:offence]).to be 5
-            expect(warrior.element[:defence]).to be 10
+            expect(warrior.element.offence).to be 5
+            expect(warrior.element.defence).to be 10
           end
           context "装備が異なる場合" do
             context "剣の場合" do
-              let(:equipment) { Equipment::Sword }
+              let(:equipment) { Equipment.new("剣") }
               it "アタックポイントが30、ディフェンスポイントが30上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 30
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.offence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
                 expect(warrior.offence_bonus).to be 20
@@ -40,10 +41,10 @@ describe "Warrior" do
               end
             end
             context "杖の場合" do
-              let(:equipment) { Equipment::Stick }
+              let(:equipment) { Equipment.new("杖") }
               it "アタックポイントが30、ディフェンスポイントが10上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 10
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 10
               end
               it "アタックポイントの合計が40になる" do
                 expect(warrior.attack).to be 40
@@ -53,10 +54,10 @@ describe "Warrior" do
               end
             end
             context "グローブの場合" do
-              let(:equipment) { Equipment::Glove }
+              let(:equipment) { Equipment.new("グローブ") }
               it "アタックポイントが20、ディフェンスポイントが20上昇する" do
-                expect(warrior.equipment[:offence]).to be 20
-                expect(warrior.equipment[:defence]).to be 20
+                expect(warrior.equipment.offence).to be 20
+                expect(warrior.equipment.defence).to be 20
               end
               it "アタックポイントの合計が30になる" do
                 expect(warrior.attack).to be 30
@@ -68,20 +69,20 @@ describe "Warrior" do
           end
         end
         context "水の場合" do
-          let(:element) { Element::Water }
+          let(:element) { Element.new("水") }
           it "アタックポイントが10、ディフェンスポイントが5上昇する" do
-            expect(warrior.element[:offence]).to be 10
-            expect(warrior.element[:defence]).to be 5
+            expect(warrior.element.offence).to be 10
+            expect(warrior.element.defence).to be 5
           end
           it "ディフェンスポイントが追加で10上昇する" do
             expect(warrior.defence_bonus).to be 10
           end
           context "装備が異なる場合" do
             context "剣の場合" do
-              let(:equipment) { Equipment::Sword }
+              let(:equipment) { Equipment.new("剣") }
               it "アタックポイントが30、ディフェンスポイントが30上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 30
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
                 expect(warrior.offence_bonus).to be 20
@@ -94,10 +95,10 @@ describe "Warrior" do
               end
             end
             context "杖の場合" do
-              let(:equipment) { Equipment::Stick }
+              let(:equipment) { Equipment.new("杖") }
               it "アタックポイントが30、ディフェンスポイントが10上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 10
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 10
               end
               it "アタックポイントの合計が45になる" do
                 expect(warrior.attack).to be 45
@@ -107,10 +108,10 @@ describe "Warrior" do
               end
             end
             context "グローブの場合" do
-              let(:equipment) { Equipment::Glove }
+              let(:equipment) { Equipment.new("グローブ") }
               it "アタックポイントが20、ディフェンスポイントが20上昇する" do
-                expect(warrior.equipment[:offence]).to be 20
-                expect(warrior.equipment[:defence]).to be 20
+                expect(warrior.equipment.offence).to be 20
+                expect(warrior.equipment.defence).to be 20
               end
               it "アタックポイントの合計が35になる" do
                 expect(warrior.attack).to be 35
@@ -122,17 +123,17 @@ describe "Warrior" do
           end
         end
         context "雷の場合" do
-          let(:element) { Element::Thunder }
+          let(:element) { Element.new("雷") }
           it "アタックポイントが15、ディフェンスポイントが0上昇する" do
-            expect(warrior.element[:offence]).to be 15
-            expect(warrior.element[:defence]).to be 0
+            expect(warrior.element.offence).to be 15
+            expect(warrior.element.defence).to be 0
           end
           context "装備が異なる場合" do
             context "剣の場合" do
-              let(:equipment) { Equipment::Sword }
+              let(:equipment) { Equipment.new("剣") }
               it "アタックポイントが30、ディフェンスポイントが30上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 30
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
                 expect(warrior.offence_bonus).to be 20
@@ -145,10 +146,10 @@ describe "Warrior" do
               end
             end
             context "杖の場合" do
-              let(:equipment) { Equipment::Stick }
+              let(:equipment) { Equipment.new("杖") }
               it "アタックポイントが30、ディフェンスポイントが10上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 10
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 10
               end
               it "アタックポイントの合計が50になる" do
                 expect(warrior.attack).to be 50
@@ -158,10 +159,10 @@ describe "Warrior" do
               end
             end
             context "グローブの場合" do
-              let(:equipment) { Equipment::Glove }
+              let(:equipment) { Equipment.new("グローブ") }
               it "アタックポイントが20、ディフェンスポイントが20上昇する" do
-                expect(warrior.equipment[:offence]).to be 20
-                expect(warrior.equipment[:defence]).to be 20
+                expect(warrior.equipment.offence).to be 20
+                expect(warrior.equipment.defence).to be 20
               end
               it "アタックポイントの合計が40になる" do
                 expect(warrior.attack).to be 40
@@ -175,26 +176,26 @@ describe "Warrior" do
       end
     end
     context "女性の場合" do
-      let(:sex) { Sex::Women }
+      let(:sex) { Sex.new("女性") }
       it "ディフェンスポイントが5ポイント上昇する" do
-        expect(warrior.sex[:defence]).to be 5
+        expect(warrior.sex.defence).to be 5
       end
       it "スキルがビッグバン" do
-        expect(warrior.skill[:sk]).to eq("ビッグバン")
+        expect(warrior.skill.name).to eq("ビッグバン")
       end
       context "属性が異なる場合" do
         context "風の場合" do
-          let(:element) { Element::Wind }
+          let(:element) { Element.new("風") }
           it "アタックポイントが５、ディフェンスポイントが10上昇する" do
-            expect(warrior.element[:offence]).to be 5
-            expect(warrior.element[:defence]).to be 10
+            expect(warrior.element.offence).to be 5
+            expect(warrior.element.defence).to be 10
           end
           context "装備が異なる場合" do
             context "剣の場合" do
-              let(:equipment) { Equipment::Sword }
+              let(:equipment) { Equipment.new("剣") }
               it "アタックポイントが30、ディフェンスポイントが30上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 30
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
                 expect(warrior.offence_bonus).to be 20
@@ -207,10 +208,10 @@ describe "Warrior" do
               end
             end
             context "杖の場合" do
-              let(:equipment) { Equipment::Stick }
+              let(:equipment) { Equipment.new("杖") }
               it "アタックポイントが30、ディフェンスポイントが10上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 10
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 10
               end
               it "アタックポイントの合計が35になる" do
                 expect(warrior.attack).to be 35
@@ -220,10 +221,10 @@ describe "Warrior" do
               end
             end
             context "グローブの場合" do
-              let(:equipment) { Equipment::Glove }
+              let(:equipment) { Equipment.new("グローブ") }
               it "アタックポイントが20、ディフェンスポイントが20上昇する" do
-                expect(warrior.equipment[:offence]).to be 20
-                expect(warrior.equipment[:defence]).to be 20
+                expect(warrior.equipment.offence).to be 20
+                expect(warrior.equipment.defence).to be 20
               end
               it "アタックポイントの合計が30になる" do
                 expect(warrior.attack).to be 25
@@ -235,20 +236,20 @@ describe "Warrior" do
           end
         end
         context "水の場合" do
-          let(:element) { Element::Water }
+          let(:element) { Element.new("水") }
           it "アタックポイントが10、ディフェンスポイントが5上昇する" do
-            expect(warrior.element[:offence]).to be 10
-            expect(warrior.element[:defence]).to be 5
+            expect(warrior.element.offence).to be 10
+            expect(warrior.element.defence).to be 5
           end
           it "ディフェンスポイントが追加で10上昇する" do
             expect(warrior.defence_bonus).to be 10
           end
           context "装備が異なる場合" do
             context "剣の場合" do
-              let(:equipment) { Equipment::Sword }
+              let(:equipment) { Equipment.new("剣") }
               it "アタックポイントが30、ディフェンスポイントが30上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 30
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
                 expect(warrior.offence_bonus).to be 20
@@ -261,10 +262,10 @@ describe "Warrior" do
               end
             end
             context "杖の場合" do
-              let(:equipment) { Equipment::Stick }
+              let(:equipment) { Equipment.new("杖") }
               it "アタックポイントが30、ディフェンスポイントが10上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 10
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 10
               end
               it "アタックポイントの合計が40になる" do
                 expect(warrior.attack).to be 40
@@ -274,10 +275,10 @@ describe "Warrior" do
               end
             end
             context "グローブの場合" do
-              let(:equipment) { Equipment::Glove }
+              let(:equipment) { Equipment.new("グローブ") }
               it "アタックポイントが20、ディフェンスポイントが20上昇する" do
-                expect(warrior.equipment[:offence]).to be 20
-                expect(warrior.equipment[:defence]).to be 20
+                expect(warrior.equipment.offence).to be 20
+                expect(warrior.equipment.defence).to be 20
               end
               it "アタックポイントの合計が30になる" do
                 expect(warrior.attack).to be 30
@@ -289,17 +290,17 @@ describe "Warrior" do
           end
         end
         context "雷の場合" do
-          let(:element) { Element::Thunder }
+          let(:element) { Element.new("雷") }
           it "アタックポイントが15、ディフェンスポイントが0上昇する" do
-            expect(warrior.element[:offence]).to be 15
-            expect(warrior.element[:defence]).to be 0
+            expect(warrior.element.offence).to be 15
+            expect(warrior.element.defence).to be 0
           end
           context "装備が異なる場合" do
             context "剣の場合" do
-              let(:equipment) { Equipment::Sword }
+              let(:equipment) { Equipment.new("剣") }
               it "アタックポイントが30、ディフェンスポイントが30上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 30
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
                 expect(warrior.offence_bonus).to be 20
@@ -312,10 +313,10 @@ describe "Warrior" do
               end
             end
             context "杖の場合" do
-              let(:equipment) { Equipment::Stick }
+              let(:equipment) { Equipment.new("杖") }
               it "アタックポイントが30、ディフェンスポイントが10上昇する" do
-                expect(warrior.equipment[:offence]).to be 30
-                expect(warrior.equipment[:defence]).to be 10
+                expect(warrior.equipment.offence).to be 30
+                expect(warrior.equipment.defence).to be 10
               end
               it "アタックポイントの合計が50になる" do
                 expect(warrior.attack).to be 45
@@ -325,10 +326,10 @@ describe "Warrior" do
               end
             end
             context "グローブの場合" do
-              let(:equipment) { Equipment::Glove }
+              let(:equipment) { Equipment.new("グローブ") }
               it "アタックポイントが20、ディフェンスポイントが20上昇する" do
-                expect(warrior.equipment[:offence]).to be 20
-                expect(warrior.equipment[:defence]).to be 20
+                expect(warrior.equipment.offence).to be 20
+                expect(warrior.equipment.defence).to be 20
               end
               it "アタックポイントの合計が35になる" do
                 expect(warrior.attack).to be 35
