@@ -18,6 +18,8 @@ end
 module Skill
   GigaSlash = {sk: "ギガスラッシュ"}
   BigBang = {sk: "ビッグバン"}
+  Begilama = {sk: "ベギラマ"}
+  Melami = {sk: "メラミ"}
 end
 
 # idは消しておく
