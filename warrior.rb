@@ -1,8 +1,8 @@
 require_relative "status_data.rb"
 
 class Warrior
-  attr_reader :sex, :job_name, :element, :equipment, :skill, :attack, :defence
-  def initialize(sex, el, eq)
+  attr_reader :sex, :element, :equipment, :skill, :attack, :defence
+  def initialize(sex, el = Element::Wind, eq = Equipment::Sword)
     # moduleにして切り出す。
     @sex = sex
     @element = el
