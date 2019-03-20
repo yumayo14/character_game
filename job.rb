@@ -10,12 +10,15 @@ class Job
   end
 
   def skill_check
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
   def offence_bonus
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
   def defence_bonus
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 end
 
