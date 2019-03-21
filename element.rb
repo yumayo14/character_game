@@ -5,24 +5,21 @@
 # end
 
 class Element
-  attr_reader :name, :offence, :defence
+  attr_reader :name
   def initialize(element)
-
     @name = element
-    @offence = offence_check
-    @defence = defence_check
   end
 
-  def offence_check
-    return 5 if @name == "風"
-    return 10 if @name == "水"
-    15 if @name == "雷"
+  def offence
+    return 5 if name == "風"
+    return 10 if name == "水"
+    15 if name == "雷"
   end
 
-  def defence_check
-    return 10 if @name == "風"
-    return 5 if @name == "水"
-    0 if @name == "雷"
+  def defence
+    return 10 if name == "風"
+    return 5 if name == "水"
+    0 if name == "雷"
   end
 end
 

@@ -4,9 +4,7 @@
     <list default="true" id="55b5d0f4-8687-497c-a5fe-1fcf5f0aad21" name="デフォルト" comment="">
       <change beforePath="$PROJECT_DIR$/element.rb" beforeDir="false" afterPath="$PROJECT_DIR$/element.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/equipment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/job.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sex.rb" beforeDir="false" afterPath="$PROJECT_DIR$/sex.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skill.rb" beforeDir="false" afterPath="$PROJECT_DIR$/skill.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="skill.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="skill.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skill.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+            <state relative-caret-position="270">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -29,8 +27,8 @@
       <file leaf-file-name="equipment.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/equipment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="315">
+              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -38,8 +36,8 @@
       <file leaf-file-name="element.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/element.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="315">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -80,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sex.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sex.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sex.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="240">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -145,9 +143,9 @@
         <option value="$PROJECT_DIR$/warrior.rb" />
         <option value="$PROJECT_DIR$/spec/warrior_spec.rb" />
         <option value="$PROJECT_DIR$/skill.rb" />
-        <option value="$PROJECT_DIR$/equipment.rb" />
-        <option value="$PROJECT_DIR$/element.rb" />
         <option value="$PROJECT_DIR$/job.rb" />
+        <option value="$PROJECT_DIR$/element.rb" />
+        <option value="$PROJECT_DIR$/equipment.rb" />
         <option value="$PROJECT_DIR$/sex.rb" />
       </list>
     </option>
@@ -238,12 +236,12 @@
       <updated>1552959203219</updated>
       <workItem from="1552959204676" duration="22919000" />
       <workItem from="1553038334323" duration="19048000" />
-      <workItem from="1553064063839" duration="8123000" />
+      <workItem from="1553064063839" duration="8858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50090000" />
+    <option name="totallyTimeSpent" value="50825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
@@ -411,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sex.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wizard.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -448,22 +439,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/element.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/equipment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="315">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skill.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sex.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
