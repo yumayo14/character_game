@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b5d0f4-8687-497c-a5fe-1fcf5f0aad21" name="デフォルト" comment="">
-      <change afterPath="$PROJECT_DIR$/elements/thunder.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/water.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/wind.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equipments/glove.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equipments/stick.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equipments/sword.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobs/warrior.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sexes/women.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/corrections/warrior_correction.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/character.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/element.rb" beforeDir="false" afterPath="$PROJECT_DIR$/element.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/equipment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipments/glove.rb" beforeDir="false" afterPath="$PROJECT_DIR$/equipments/glove.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipments/sword.rb" beforeDir="false" afterPath="$PROJECT_DIR$/equipments/sword.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/job.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/men.rb" beforeDir="false" afterPath="$PROJECT_DIR$/sexes/men.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sex.rb" beforeDir="false" afterPath="$PROJECT_DIR$/sex.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs/warrior.rb" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/warrior.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sexes/wizard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/wizard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skill.rb" beforeDir="false" afterPath="$PROJECT_DIR$/skill.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/warrior_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/warrior_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/wizard_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/wizard_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warrior.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wizard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/sexes/wizard.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +39,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="equipment.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="job.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warrior_correction.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/corrections/warrior_correction.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="equipment.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/equipment.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -75,29 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thunder.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elements/thunder.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sword.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/equipments/sword.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stick.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/equipments/stick.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -105,8 +96,8 @@
       <file leaf-file-name="glove.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/equipments/glove.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="150">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -114,8 +105,8 @@
       <file leaf-file-name="warrior_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/warrior_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4395">
-              <caret line="293" column="25" lean-forward="true" selection-start-line="293" selection-start-column="25" selection-end-line="293" selection-end-column="25" />
+            <state relative-caret-position="258">
+              <caret line="244" column="79" selection-start-line="244" selection-start-column="79" selection-end-line="244" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -123,8 +114,8 @@
       <file leaf-file-name="sex.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sex.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state>
+              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -133,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/jobs/warrior.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <caret line="10" column="158" selection-start-line="10" selection-start-column="158" selection-end-line="10" selection-end-column="158" />
             </state>
           </provider>
         </entry>
@@ -158,6 +149,8 @@
       <find>&quot;stick&quot;</find>
       <find>&quot;glove&quot;</find>
       <find>element.capitalize</find>
+      <find>warrior.offence_bonus</find>
+      <find>warrior.defence_bonus</find>
     </findStrings>
     <replaceStrings>
       <replace>wizzard</replace>
@@ -174,6 +167,8 @@
       <replace>&quot;</replace>
       <replace>&quot;Object.const_get(element.capitalize).new.offence</replace>
       <replace>equipment.capitalize</replace>
+      <replace>WarriorCorrection.new(element, equipment).offence_correction</replace>
+      <replace>WarriorCorrection.new(element, equipment).defence_correction</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -193,22 +188,25 @@
         <option value="$PROJECT_DIR$/spec/wizard_spec.rb" />
         <option value="$PROJECT_DIR$/status_data.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/skill.rb" />
         <option value="$PROJECT_DIR$/men.rb" />
         <option value="$PROJECT_DIR$/women.rb" />
         <option value="$PROJECT_DIR$/wizard.rb" />
         <option value="$PROJECT_DIR$/elements/wind.rb" />
         <option value="$PROJECT_DIR$/elements/water.rb" />
         <option value="$PROJECT_DIR$/elements/thunder.rb" />
-        <option value="$PROJECT_DIR$/job.rb" />
         <option value="$PROJECT_DIR$/warrior.rb" />
-        <option value="$PROJECT_DIR$/spec/warrior_spec.rb" />
-        <option value="$PROJECT_DIR$/equipments/glove.rb" />
         <option value="$PROJECT_DIR$/equipments/stick.rb" />
-        <option value="$PROJECT_DIR$/equipments/sword.rb" />
         <option value="$PROJECT_DIR$/sex.rb" />
         <option value="$PROJECT_DIR$/element.rb" />
         <option value="$PROJECT_DIR$/equipment.rb" />
+        <option value="$PROJECT_DIR$/skill.rb" />
+        <option value="$PROJECT_DIR$/equipments/sword.rb" />
+        <option value="$PROJECT_DIR$/equipments/glove.rb" />
+        <option value="$PROJECT_DIR$/attackCorrection.rb" />
+        <option value="$PROJECT_DIR$/warrior_correction.rb" />
+        <option value="$PROJECT_DIR$/jobs/warrior.rb" />
+        <option value="$PROJECT_DIR$/job.rb" />
+        <option value="$PROJECT_DIR$/spec/warrior_spec.rb" />
       </list>
     </option>
   </component>
@@ -233,6 +231,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="character_game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="character_game" type="462c0819:PsiDirectoryNode" />
+              <item name="corrections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="character_game" type="462c0819:PsiDirectoryNode" />
+              <item name="elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="character_game" type="462c0819:PsiDirectoryNode" />
+              <item name="equipments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="character_game" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="character_game" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="デフォルト">
           <expand>
@@ -249,32 +283,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="character_game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="character_game" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="character_game" type="462c0819:PsiDirectoryNode" />
-              <item name="equipments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="character_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="character_game" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,8 +293,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sexes" />
+      <recent name="$PROJECT_DIR$/corrections" />
       <recent name="$PROJECT_DIR$/jobs" />
+      <recent name="$PROJECT_DIR$/sexes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -342,27 +351,30 @@
       <workItem from="1553215473212" duration="808000" />
       <workItem from="1553216290170" duration="1136000" />
       <workItem from="1553217436839" duration="1799000" />
-      <workItem from="1553219245743" duration="2555000" />
+      <workItem from="1553219245743" duration="3869000" />
+      <workItem from="1553223455978" duration="888000" />
+      <workItem from="1553224350289" duration="2463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59995000" />
+    <option name="totallyTimeSpent" value="64660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19670959" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32957748" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20243205" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32957748" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -371,7 +383,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32957748" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -402,20 +413,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jobs/warrior.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sexes/wizard.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sex.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -464,7 +461,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sexes/wizard.rb">
+    <entry file="file://$PROJECT_DIR$/jobs/wizard.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
@@ -506,13 +503,7 @@
     <entry file="file://$PROJECT_DIR$/sex.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/character.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/character.rb" />
     <entry file="file://$PROJECT_DIR$/status_data.rb" />
     <entry file="file://$PROJECT_DIR$/jobs/warrior.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,7 +513,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fighter.rb" />
-    <entry file="file://$PROJECT_DIR$/sexes/wizard.rb">
+    <entry file="file://$PROJECT_DIR$/jobs/wizard.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
@@ -587,9 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skill.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sexes/men.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -604,56 +592,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sexes/wizard.rb">
+    <entry file="file://$PROJECT_DIR$/jobs/wizard.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="25" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/warrior.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/character.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/warrior_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4395">
-          <caret line="293" column="25" lean-forward="true" selection-start-line="293" selection-start-column="25" selection-end-line="293" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipments/glove.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/character.rb" />
     <entry file="file://$PROJECT_DIR$/equipments/stick.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipments/sword.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -667,17 +614,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elements/wind.rb">
+    <entry file="file://$PROJECT_DIR$/skill.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="375">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sex.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attackCorrection.rb" />
+    <entry file="file://$PROJECT_DIR$/equipments/glove.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipments/sword.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/wind.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -688,10 +664,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/warrior_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="244" column="79" selection-start-line="244" selection-start-column="79" selection-end-line="244" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/equipment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobs/warrior.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="158" selection-start-line="10" selection-start-column="158" selection-end-line="10" selection-end-column="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corrections/warrior_correction.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>

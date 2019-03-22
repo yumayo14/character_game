@@ -1,7 +1,6 @@
 require_relative "../equipment"
 
 class Glove < Equipment
-
   def offence
     20
   end

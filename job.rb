@@ -12,27 +12,34 @@ require_relative "equipments/stick"
 require_relative "equipments/glove"
 require_relative "skill.rb"
 
+
 class Job
-  attr_reader :sex, :element, :equipment, :attack, :defence
+  attr_reader :sex, :element, :equipment
   def initialize(sex, element = "wind", equipment = "sword")
     @sex = sex
     @element = element
     @equipment = equipment
-    @attack =  Object.const_get(@sex.capitalize).new.offence + Object.const_get(@element.capitalize).new.offence + Object.const_get(@equipment.capitalize).new.offence + offence_bonus
-    @defence = Object.const_get(@sex.capitalize).new.defence + Object.const_get(@element.capitalize).new.defence + Object.const_get(@equipment.capitalize).new.defence + defence_bonus
+  end
+
+  def attack
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
+  end
+
+  def defence
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
   def skill
     raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
-  def offence_bonus
-    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
-  end
-
-  def defence_bonus
-    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
-  end
+  # def offence_bonus
+  #   raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
+  # end
+  #
+  # def defence_bonus
+  #   raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
+  # end
 end
 
 # 2
