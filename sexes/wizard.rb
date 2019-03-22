@@ -1,8 +1,4 @@
-require_relative "job.rb"
-require_relative "sex.rb"
-require_relative "element.rb"
-require_relative "equipment.rb"
-require_relative "skill.rb"
+require_relative "../job.rb"
 
 class Wizard < Job
   def skill

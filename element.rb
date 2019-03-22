@@ -1,21 +1,26 @@
 class Element
-  attr_reader :name
-  def initialize(element)
-    @name = element
-  end
-
   def offence
-    return 5 if name == "風"
-    return 10 if name == "水"
-    15 if name == "雷"
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
   def defence
-    return 10 if name == "風"
-    return 5 if name == "水"
-    0 if name == "雷"
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 end
 
 # 2
-# if文を消す
+# 下のif文を消す
+
+# class Element
+#   def offence
+#     # return 5 if name == "wind"
+#     # return 10 if name == "water"
+#     # 15 if name == "thunder"
+#   end
+#
+#   def defence
+#     # return 10 if name == "wind"
+#     # return 5 if name == "water"
+#     # 0 if name == "thunder"
+#   end
+# end

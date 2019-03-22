@@ -1,17 +1,25 @@
 require_relative "job.rb"
 require_relative "sex.rb"
+require_relative "sexes/men.rb"
+require_relative "sexes/women.rb"
 require_relative "element.rb"
+require_relative "elements/wind"
+require_relative "elements/water"
+require_relative "elements/thunder"
 require_relative "equipment.rb"
+require_relative "equipments/sword"
+require_relative "equipments/stick"
+require_relative "equipments/glove"
 require_relative "skill.rb"
 
 class Job
   attr_reader :sex, :element, :equipment, :attack, :defence
-  def initialize(sex, element = Element.new("風"), equipment = Equipment.new("剣"))
+  def initialize(sex, element = "wind", equipment = "sword")
     @sex = sex
     @element = element
     @equipment = equipment
-    @attack = @sex.offence + @element.offence + @equipment.offence + offence_bonus
-    @defence = @sex.defence + @element.defence + @equipment.defence + defence_bonus
+    @attack =  Object.const_get(@sex.capitalize).new.offence + Object.const_get(@element.capitalize).new.offence + Object.const_get(@equipment.capitalize).new.offence + offence_bonus
+    @defence = Object.const_get(@sex.capitalize).new.defence + Object.const_get(@element.capitalize).new.defence + Object.const_get(@equipment.capitalize).new.defence + defence_bonus
   end
 
   def skill

@@ -1,4 +1,4 @@
-require_relative "sex.rb"
+require_relative "../sex.rb"
 
 class Men < Sex
   def offence

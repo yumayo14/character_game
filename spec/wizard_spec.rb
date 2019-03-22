@@ -1,4 +1,4 @@
-require_relative '../wizard.rb'
+require_relative '../sexes/wizard.rb'
 
 # letでbindして、contextの中で値を入れるようにする
 

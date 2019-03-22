@@ -1,23 +1,26 @@
-# module Sex
-#   Men = {sex: "男性", offence: 5, defence: 0}
-#   Women = {sex: "女性", offence: 0, defence: 5}
-# end
 class Sex
-  attr_reader :sex
-  def initialize(sex)
-    @sex = sex
-  end
-
   def offence
-    return 5 if sex == "男性"
-    0
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
   def defence
-    return 5 if sex == "女性"
-    0
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 end
 
 # 2
 # if文を消す
+# # 2
+# # 下のif文を消す
+#
+# # class Sex
+# #   def offence
+# #     # return 5 if sex == "men"
+# #     #0
+# #   end
+# #
+# #   def defence
+# #     # return 5 if sex == "women"
+# #     # 0
+# #   end
+# # end
