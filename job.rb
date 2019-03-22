@@ -15,11 +15,10 @@ require_relative "skill.rb"
 
 class Job
   attr_reader :sex, :element, :equipment
-  def initialize(sex, element = "wind", equipment = "sword")
+  def initialize(sex, element = Wind.new, equipment = Sword.new)
     @sex = sex
     @element = element
     @equipment = equipment
-    # @skill = Skill.new(self.class, sex)
   end
 
   def attack

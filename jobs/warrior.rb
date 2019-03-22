@@ -5,17 +5,17 @@ require_relative "../calculators/warrior_calculators/warrior_defence_calculator.
 class Warrior < Job
 
   def attack
-    WarriorAttackCalculator.new(sex, element, equipment).calculate
+    WarriorAttackCalculator.new(sex, element, equipment).calculate(sex, element, equipment)
   end
 
   def defence
-    WarriorDefenceCalculator.new(sex, element, equipment).calculate
+    WarriorDefenceCalculator.new(sex, element, equipment).calculate(sex, element, equipment)
   end
   # 冗長
   # 職業のクラスでやること？、計算するためのクラスを作ってもいいのでは？？、計算された攻撃力、防御力を持っているだけでいい。
 
   def skill
-    return Skill.new("ギガスラッシュ") if sex == "men"
+    return Skill.new("ギガスラッシュ") if sex.name == "men"
     Skill.new("ビッグバン")
   end
   # 性別だけで別れているが、増えた場合やばい。
