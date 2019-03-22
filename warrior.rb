@@ -5,10 +5,10 @@ require_relative "equipment.rb"
 require_relative "skill.rb"
 
 class Warrior < Job
-  # def skill_check
-  #   # return Skill::GigaSlash if @sex.sex == "男性"
-  #   # Skill::BigBang if @sex.sex == "女性"
-  # end
+  def skill
+    return Skill.new("ギガスラッシュ") if @sex.sex == "男性"
+    Skill.new("ビッグバン")
+  end
 
   def offence_bonus
     bonus = 0

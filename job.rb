@@ -5,14 +5,17 @@ require_relative "equipment.rb"
 require_relative "skill.rb"
 
 class Job
-  attr_reader :sex, :element, :equipment, :skill, :attack, :defence
+  attr_reader :sex, :element, :equipment, :attack, :defence
   def initialize(sex, element = Element.new("風"), equipment = Equipment.new("剣"))
     @sex = sex
     @element = element
     @equipment = equipment
-    @skill = Skill.new(self.class.to_s, sex.sex)
     @attack = @sex.offence + @element.offence + @equipment.offence + offence_bonus
     @defence = @sex.defence + @element.defence + @equipment.defence + defence_bonus
+  end
+
+  def skill
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 
   def offence_bonus

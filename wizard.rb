@@ -5,7 +5,7 @@ require_relative "equipment.rb"
 require_relative "skill.rb"
 
 class Wizard < Job
-  def skill_check
+  def skill
     return Skill::Begilama if @sex[:sex] == "男性"
     Skill::Melami if @sex[:sex] == "女性"
   end
