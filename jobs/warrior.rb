@@ -1,30 +1,25 @@
 require_relative "../job.rb"
-require_relative "../corrections/warrior_correction.rb"
+require_relative "../calculators/warrior_calculators/warrior_attack_calculator.rb"
+require_relative "../calculators/warrior_calculators/warrior_defence_calculator.rb"
 
 class Warrior < Job
 
   def attack
-    Object.const_get(@sex.capitalize).new.offence + Object.const_get(@element.capitalize).new.offence + Object.const_get(@equipment.capitalize).new.offence + WarriorCorrection.new(@element, @equipment).offence_correction
+    WarriorAttackCalculator.new(sex, element, equipment).calculate
   end
 
   def defence
-    Object.const_get(@sex.capitalize).new.defence + Object.const_get(@element.capitalize).new.defence + Object.const_get(@equipment.capitalize).new.defence + WarriorCorrection.new(@element, @equipment).defence_correction
+    WarriorDefenceCalculator.new(sex, element, equipment).calculate
   end
+  # 冗長
+  # 職業のクラスでやること？、計算するためのクラスを作ってもいいのでは？？、計算された攻撃力、防御力を持っているだけでいい。
 
   def skill
     return Skill.new("ギガスラッシュ") if sex == "men"
     Skill.new("ビッグバン")
   end
-
-  # def offence_bonus
-  #   bonus = 0
-  #   bonus += 20 if @equipment == "sword"
-  #   bonus
-  # end
+  # 性別だけで別れているが、増えた場合やばい。
+  # 今の状態、キャラクターがskillを持ってしまっている。どこがスキルの情報を持つべきところ？
+  # 理想、warrior.skillで返ってくる
   #
-  # def defence_bonus
-  #   bonus = 0
-  #   bonus += 10 if @element == "water"
-  #   bonus
-  # end
 end

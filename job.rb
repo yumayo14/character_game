@@ -19,6 +19,7 @@ class Job
     @sex = sex
     @element = element
     @equipment = equipment
+    # @skill = Skill.new(self.class, sex)
   end
 
   def attack
@@ -32,14 +33,6 @@ class Job
   def skill
     raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
-
-  # def offence_bonus
-  #   raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
-  # end
-  #
-  # def defence_bonus
-  #   raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
-  # end
 end
 
 # 2
