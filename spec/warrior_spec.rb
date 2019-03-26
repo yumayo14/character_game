@@ -4,7 +4,7 @@ require_relative '../jobs/warrior.rb'
 # letでbindして、contextの中で値を入れるようにする
 
 describe "Warrior" do
-  let(:warrior) { Warrior.new(sex, element,equipment) }
+  let(:warrior) { Warrior.new(sex: sex, element: element, equipment: equipment) }
   context "性別が異なる場合" do
     let(:element) { Wind.new }
     let(:equipment) { Sword.new }

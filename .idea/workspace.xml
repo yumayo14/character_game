@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b5d0f4-8687-497c-a5fe-1fcf5f0aad21" name="デフォルト" comment="">
-      <change beforePath="$PROJECT_DIR$/job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/job.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/warrior_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/warrior_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/spec/warrior_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -374,7 +373,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78889000" />
+    <option name="totallyTimeSpent" value="79002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -725,7 +724,7 @@
     <entry file="file://$PROJECT_DIR$/spec/warrior_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
         </state>
       </provider>
     </entry>
