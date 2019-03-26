@@ -1,7 +1,12 @@
 class Skill
-  attr_reader :name
- def initialize(name)
-   @name = name
- end
+  attr_reader :sex
+  def initialize(job)
+    @sex = job.sex
+  end
+
+private
+  def checked_skill
+    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
+  end
 end
 
