@@ -19,12 +19,10 @@ describe "Man" do
       end
     end
     context "魔法使いの場合" do
-      it "スキルがベギラマ" do
-      end
+      it "スキルがベギラマ"
     end
     context "武闘家の場合" do
-      it "スキルがブースト" do
-      end
+      it "スキルがブースト"
     end
   end
 end

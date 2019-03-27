@@ -20,12 +20,10 @@ describe "Woman" do
       end
     end
     context "魔法使いの場合" do
-      it "スキルがメラミ" do
-      end
+      it "スキルがメラミ"
     end
     context "武闘家の場合" do
-      it "スキルがカウンター" do
-      end
+      it "スキルがカウンター"
     end
   end
 end
