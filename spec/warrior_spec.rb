@@ -31,7 +31,7 @@ describe "Warrior" do
                 expect(equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
-                expect(WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).send(:equipment_correction)).to be 20
+                expect(WarriorAttackCalculator.new(warrior).send(:equipment_correction)).to be 20
               end
               it "アタックポイントの合計が60になる" do
                 expect(warrior.attack).to be 60
@@ -75,7 +75,7 @@ describe "Warrior" do
             expect(element.defence).to be 5
           end
           it "ディフェンスポイントが追加で10上昇する" do
-            expect(WarriorDefenceCalculator.new(sex: sex, element: element, equipment: equipment).send(:element_correction)).to be 10
+            expect(WarriorDefenceCalculator.new(warrior).send(:element_correction)).to be 10
           end
           context "装備が異なる場合" do
             context "剣の場合" do
@@ -85,7 +85,7 @@ describe "Warrior" do
                 expect(equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
-                expect(WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).send(:equipment_correction)).to be 20
+                expect(WarriorAttackCalculator.new(warrior).send(:equipment_correction)).to be 20
               end
               it "アタックポイントの合計が65になる" do
                 expect(warrior.attack).to be 65
@@ -136,7 +136,7 @@ describe "Warrior" do
                 expect(equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
-                expect(WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).send(:equipment_correction)).to be 20
+                expect(WarriorAttackCalculator.new(warrior).send(:equipment_correction)).to be 20
               end
               it "アタックポイントの合計が70になる" do
                 expect(warrior.attack).to be 70
@@ -198,7 +198,7 @@ describe "Warrior" do
                 expect(equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
-                expect(WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).send(:equipment_correction)).to be 20
+                expect(WarriorAttackCalculator.new(warrior).send(:equipment_correction)).to be 20
               end
               it "アタックポイントの合計が55になる" do
                 expect(warrior.attack).to be 55
@@ -242,7 +242,7 @@ describe "Warrior" do
             expect(element.defence).to be 5
           end
           it "ディフェンスポイントが追加で10上昇する" do
-            expect(WarriorDefenceCalculator.new(sex: sex, element: element, equipment: equipment).send(:element_correction)).to be 10
+            expect(WarriorDefenceCalculator.new(warrior).send(:element_correction)).to be 10
           end
           context "装備が異なる場合" do
             context "剣の場合" do
@@ -252,7 +252,7 @@ describe "Warrior" do
                 expect(equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
-                expect(WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).send(:equipment_correction)).to be 20
+                expect(WarriorAttackCalculator.new(warrior).send(:equipment_correction)).to be 20
               end
               it "アタックポイントの合計が60になる" do
                 expect(warrior.attack).to be 60
@@ -303,7 +303,7 @@ describe "Warrior" do
                 expect(equipment.defence).to be 30
               end
               it "アタックポイントが追加で20上昇する" do
-                expect(WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).send(:equipment_correction)).to be 20
+                expect(WarriorAttackCalculator.new(warrior).send(:equipment_correction)).to be 20
               end
               it "アタックポイントの合計が70になる" do
                 expect(warrior.attack).to be 65

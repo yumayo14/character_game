@@ -5,11 +5,11 @@ require_relative "../calculators/warrior_calculators/warrior_defence_calculator.
 
 class Warrior < Job
   def attack
-    WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).calculate
+    WarriorAttackCalculator.new(self).calculate
   end
 
   def defence
-    WarriorDefenceCalculator.new(sex: sex, element: element, equipment: equipment).calculate
+    WarriorDefenceCalculator.new(self).calculate
   end
 
   def skill

@@ -1,9 +1,9 @@
 class DefenceCalculator
   attr_reader :sex, :element, :equipment
-  def initialize(args)
-    @sex = args[:sex]
-    @element = args[:element]
-    @equipment = args[:equipment]
+  def initialize(job)
+    @sex = job.sex
+    @element = job.element
+    @equipment = job.equipment
   end
 
   def calculate
