@@ -9,7 +9,7 @@ describe "Warrior" do
     let(:element) { Wind.new }
     let(:equipment) { Sword.new }
     context "男性の場合" do
-      let(:sex) { Men.new }
+      let(:sex) { Man.new }
       it "アタックポイントが５ポイント上昇する" do
         expect(sex.offence).to be 5
       end
@@ -176,7 +176,7 @@ describe "Warrior" do
       end
     end
     context "女性の場合" do
-      let(:sex) { Women.new }
+      let(:sex) { Woman.new }
       it "ディフェンスポイントが5ポイント上昇する" do
         expect(sex.defence).to be 5
       end

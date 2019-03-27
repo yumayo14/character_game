@@ -1,16 +1,16 @@
 require_relative "../sex.rb"
 
-class Men < Sex
+class Woman < Sex
   attr_reader :name
   def initialize
-    @name = "men"
+    @name = "women"
   end
 
   def offence
-    5
+    0
   end
 
   def defence
-    0
+    5
   end
 end

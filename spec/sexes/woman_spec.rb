@@ -1,8 +1,8 @@
-require_relative "../../sexes/women.rb"
+require_relative "../../sexes/woman.rb"
 require_relative "../../jobs/warrior"
 
-describe "Women" do
-  let(:women) { Women.new }
+describe "Woman" do
+  let(:women) { Woman.new }
 
   it "攻撃力は変わらない" do
     expect(women.offence).to eq(0)
