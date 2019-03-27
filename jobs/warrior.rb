@@ -4,7 +4,6 @@ require_relative "../calculators/warrior_calculators/warrior_attack_calculator.r
 require_relative "../calculators/warrior_calculators/warrior_defence_calculator.rb"
 
 class Warrior < Job
-
   def attack
     WarriorAttackCalculator.new(sex: sex, element: element, equipment: equipment).calculate
   end

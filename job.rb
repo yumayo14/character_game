@@ -12,7 +12,6 @@ require_relative "equipments/stick"
 require_relative "equipments/glove"
 require_relative "skill.rb"
 
-
 class Job
   attr_reader :sex, :element, :equipment
   def initialize(args)

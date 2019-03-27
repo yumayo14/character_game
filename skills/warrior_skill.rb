@@ -3,7 +3,6 @@ require_relative "warrior_skills/male_warrior_skill"
 require_relative "warrior_skills/female_warrior_skill"
 
 class WarriorSkill < Skill
-
   def name
     checked_skill.name
   end
