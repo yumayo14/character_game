@@ -33,6 +33,3 @@ class Job
     raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 end
-
-# 2
-# offence_bonus、defence_bonusを消すべきだが、if文を用いないやり方で行えるようにする。
