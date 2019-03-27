@@ -1,7 +1,7 @@
 require_relative "job.rb"
 require_relative "sex.rb"
-require_relative "sexes/men.rb"
-require_relative "sexes/women.rb"
+require_relative "sexes/man.rb"
+require_relative "sexes/woman.rb"
 require_relative "element.rb"
 require_relative "elements/wind"
 require_relative "elements/water"
@@ -12,13 +12,12 @@ require_relative "equipments/stick"
 require_relative "equipments/glove"
 require_relative "skill.rb"
 
-
 class Job
   attr_reader :sex, :element, :equipment
   def initialize(args)
     @sex = args[:sex]
-    @element = args[:element]
-    @equipment = args[:equipment]
+    @element = args[:element] || Wind.new
+    @equipment = args[:equipment] || Sword.new
   end
 
   def attack
@@ -33,6 +32,3 @@ class Job
     raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 end
-
-# 2
-# offence_bonus、defence_bonusを消すべきだが、if文を用いないやり方で行えるようにする。

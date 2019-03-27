@@ -1,14 +1,13 @@
 require_relative "../attack_calculator"
 
 class WarriorAttackCalculator < AttackCalculator
-
-  def calculate(*attributes)
-    super + correction
+private
+  def correction
+    equipment_correction
   end
 
-  def correction
+  def equipment_correction
     return 20 if equipment.name == "sword"
     0
   end
-#   この箇所だけのために、各クラスに@nameインスタンスを作成、直したい。
 end
