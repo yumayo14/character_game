@@ -1,5 +1,4 @@
 require_relative "../../equipments/glove.rb"
-require_relative "../../jobs/warrior.rb"
 
 describe "Glove" do
   let(:glove) { Glove.new }

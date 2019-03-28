@@ -1,5 +1,4 @@
 require_relative "../../equipments/stick.rb"
-require_relative "../../jobs/warrior.rb"
 
 describe "Stick" do
   let(:stick) { Stick.new }
