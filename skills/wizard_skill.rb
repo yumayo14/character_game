@@ -1,6 +1,6 @@
 require_relative "../skill.rb"
-require_relative "wizard_skills/female_wizard_skill.rb"
-require_relative "wizard_skills/male_wizard_skill.rb"
+require_relative "wizard_skills/wizard_man_skill.rb"
+require_relative "wizard_skills/wizard_woman_skill.rb"
 
 class WizardSkill < Skill
   def name
@@ -9,7 +9,7 @@ class WizardSkill < Skill
 
 private
   def checked_skill
-    return MaleWizardSkill.new if sex.name == "men"
-    FemaleWizardSkill.new if sex.name == "women"
+    return WizardManSkill.new if sex.name == "men"
+    WizardWomanSkill.new if sex.name == "women"
   end
 end

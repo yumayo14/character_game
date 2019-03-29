@@ -1,4 +1,4 @@
-class MaleWizardSkill
+class WizardManSkill
   def name
     "ベギラマ"
   end

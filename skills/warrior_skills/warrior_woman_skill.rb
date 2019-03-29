@@ -1,4 +1,4 @@
-class FemaleWarriorSkill
+class WarriorWomanSkill
   def name
     "ビッグバン"
   end

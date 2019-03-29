@@ -1,4 +1,4 @@
-class FemaleWizardSkill
+class WizardWomanSkill
   def name
     "メラミ"
   end
