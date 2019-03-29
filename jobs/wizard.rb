@@ -1,20 +1,18 @@
 require_relative "../job.rb"
+require_relative "../skills/wizard_skill.rb"
+require_relative "../calculators/wizard_calculators/wizard_attack_calculator.rb"
+require_relative "../calculators/wizard_calculators/wizard_defence_calculator.rb"
 
 class Wizard < Job
+  def attack
+    WizardAttackCalculator.new(self).calculate
+  end
+
+  def defence
+    WizardDefenceCalculator.new(self).calculate
+  end
+
   def skill
-    return Skill::Begilama if @sex[:sex] == "男性"
-    Skill::Melami if @sex[:sex] == "女性"
-  end
-
-  def offence_bonus
-    bonus = 0
-    bonus += 20 if @equipment[:eq] == "杖"
-    bonus
-  end
-
-  def defence_bonus
-    bonus = 0
-    bonus += 5 if @element[:el] == "雷"
-    bonus
+    WizardSkill.new(self).name
   end
 end
