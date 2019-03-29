@@ -6,7 +6,7 @@ class Thunder < Element
     @name = "thunder"
   end
 
-  def offence
+  def attack
     15
   end
 

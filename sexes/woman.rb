@@ -6,7 +6,7 @@ class Woman < Sex
     @name = "women"
   end
 
-  def offence
+  def attack
     0
   end
 

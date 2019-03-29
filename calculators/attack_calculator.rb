@@ -7,7 +7,7 @@ class AttackCalculator
   end
 
   def calculate
-    sex.offence + element.offence + equipment.offence + correction
+    sex.attack + element.attack + equipment.attack + correction
   end
 
 private

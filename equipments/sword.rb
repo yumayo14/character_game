@@ -6,7 +6,7 @@ class Sword < Equipment
     @name = "sword"
   end
 
-  def offence
+  def attack
     30
   end
 

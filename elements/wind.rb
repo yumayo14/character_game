@@ -6,7 +6,7 @@ class Wind < Element
     @name = "wind"
   end
 
-  def offence
+  def attack
     5
   end
 

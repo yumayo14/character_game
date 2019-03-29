@@ -6,7 +6,7 @@ class Glove < Equipment
     @name = "glove"
   end
 
-  def offence
+  def attack
     20
   end
 

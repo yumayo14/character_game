@@ -6,7 +6,7 @@ class Stick < Equipment
     @name = "stick"
   end
 
-  def offence
+  def attack
     30
   end
 

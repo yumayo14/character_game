@@ -6,7 +6,7 @@ class Water < Element
     @name = "water"
   end
 
-  def offence
+  def attack
     10
   end
 
