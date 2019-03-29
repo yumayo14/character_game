@@ -1,8 +1,6 @@
 require 'pry'
 require_relative '../jobs/warrior.rb'
 
-# letでbindして、contextの中で値を入れるようにする
-
 describe "Warrior" do
   let(:warrior) { Warrior.new(sex: sex, element: element, equipment: equipment) }
   context "性別が異なる場合" do
@@ -320,4 +318,3 @@ describe "Warrior" do
     end
   end
 end
-# 階層は深く網羅的にしていくようにする。女性⇨属性⇨装備
