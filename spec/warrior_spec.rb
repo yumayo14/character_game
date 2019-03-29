@@ -28,7 +28,7 @@ describe "Warrior" do
                 expect(equipment.offence).to be 30
                 expect(equipment.defence).to be 30
               end
-              it "補正でアタックポイントが20加算され、アタックポイントの合計が60になる" do
+              it "装備の補正でアタックポイントが20加算され、アタックポイントの合計が60になる" do
                 expect(warrior.attack).to be 60
               end
               it "ディフェンスポイントの合計が40になる" do
@@ -76,7 +76,7 @@ describe "Warrior" do
                 expect(equipment.offence).to be 30
                 expect(equipment.defence).to be 30
               end
-              it "武器の補正でアタックポイントが20加算され、アタックポイントの合計が65になる" do
+              it "装備の補正でアタックポイントが20加算され、アタックポイントの合計が65になる" do
                 expect(warrior.attack).to be 65
               end
               it "属性の補正でディフェンスポイントが10加算され、ディフェンスポイントの合計が45になる" do
@@ -124,7 +124,7 @@ describe "Warrior" do
                 expect(equipment.offence).to be 30
                 expect(equipment.defence).to be 30
               end
-              it "補正でアタックポイントが20加算され、アタックポイントの合計が70になる" do
+              it "装備の補正でアタックポイントが20加算され、アタックポイントの合計が70になる" do
                 expect(warrior.attack).to be 70
               end
               it "ディフェンスポイントの合計が30になる" do
@@ -183,7 +183,7 @@ describe "Warrior" do
                 expect(equipment.offence).to be 30
                 expect(equipment.defence).to be 30
               end
-              it "補正でアタックポイントが20加算され、アタックポイントの合計が55になる" do
+              it "装備の補正でアタックポイントが20加算され、アタックポイントの合計が55になる" do
                 expect(warrior.attack).to be 55
               end
               it "ディフェンスポイントの合計が25になる" do
@@ -231,7 +231,7 @@ describe "Warrior" do
                 expect(equipment.offence).to be 30
                 expect(equipment.defence).to be 30
               end
-              it "補正でアタックポイントが20加算され、アタックポイントの合計が60になる" do
+              it "装備の補正でアタックポイントが20加算され、アタックポイントの合計が60になる" do
                 expect(warrior.attack).to be 60
               end
               it "属性の補正でディフェンスポイントが10加算され、ディフェンスポイントの合計が50になる" do
@@ -279,7 +279,7 @@ describe "Warrior" do
                 expect(equipment.offence).to be 30
                 expect(equipment.defence).to be 30
               end
-              it "補正でアタックポイントが20加算され、アタックポイントの合計が65になる" do
+              it "装備の補正でアタックポイントが20加算され、アタックポイントの合計が65になる" do
                 expect(warrior.attack).to be 65
               end
               it "ディフェンスポイントの合計が35になる" do
