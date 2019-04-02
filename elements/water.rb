@@ -13,4 +13,16 @@ class Water < Element
   def defence
     5
   end
+
+  def warrior_correction
+    10
+  end
+
+  def wizard_correction
+    0
+  end
+
+  def fighter_correction
+    0
+  end
 end

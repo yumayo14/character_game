@@ -13,4 +13,16 @@ class Wind < Element
   def defence
     10
   end
+
+  def warrior_correction
+    0
+  end
+
+  def wizard_correction
+    0
+  end
+
+  def fighter_correction
+    20
+  end
 end
