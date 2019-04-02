@@ -7,7 +7,7 @@ class DefenceCalculator
   end
 
   def calculate
-    @sex.defence + @element.defence + @equipment.defence + correction
+    sex.defence + element.defence + equipment.defence + correction
   end
 
 private
