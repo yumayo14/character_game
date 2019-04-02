@@ -7,15 +7,11 @@ class AttackCalculator
   end
 
   def calculate
-    sex.offence + element.offence + equipment.offence + correction
+    sex.attack + equipment.attack + element.attack + correction
   end
 
 private
   def correction
-    raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
-  end
-
-  def equipment_correction
     raise NotImplementedError.new("You must implement #{self.class}##{__method__}")
   end
 end

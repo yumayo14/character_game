@@ -6,11 +6,23 @@ class Sword < Equipment
     @name = "sword"
   end
 
-  def offence
+  def attack
     30
   end
 
   def defence
     30
+  end
+
+  def warrior_correction
+    20
+  end
+
+  def wizard_correction
+    0
+  end
+
+  def fighter_correction
+    0
   end
 end

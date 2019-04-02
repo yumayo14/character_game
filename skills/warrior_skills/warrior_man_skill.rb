@@ -1,4 +1,4 @@
-class MaleWarriorSkill
+class WarriorManSkill
   def name
     "ギガスラッシュ"
   end

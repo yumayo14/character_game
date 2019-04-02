@@ -6,11 +6,23 @@ class Stick < Equipment
     @name = "stick"
   end
 
-  def offence
+  def attack
     30
   end
 
   def defence
     10
+  end
+
+  def warrior_correction
+    0
+  end
+
+  def wizard_correction
+    20
+  end
+
+  def fighter_correction
+    0
   end
 end

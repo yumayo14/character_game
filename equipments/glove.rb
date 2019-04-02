@@ -6,11 +6,23 @@ class Glove < Equipment
     @name = "glove"
   end
 
-  def offence
+  def attack
     20
   end
 
   def defence
+    20
+  end
+
+  def warrior_correction
+    0
+  end
+
+  def wizard_correction
+    0
+  end
+
+  def fighter_correction
     20
   end
 end

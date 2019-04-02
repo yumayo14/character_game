@@ -6,11 +6,23 @@ class Thunder < Element
     @name = "thunder"
   end
 
-  def offence
+  def attack
     15
   end
 
   def defence
+    0
+  end
+
+  def warrior_correction
+    0
+  end
+
+  def wizard_correction
+    5
+  end
+
+  def fighter_correction
     0
   end
 end
