@@ -5,7 +5,7 @@ describe "Woman" do
   let(:women) { Woman.new }
 
   it "攻撃力は変わらない" do
-    expect(women.offence).to eq(0)
+    expect(women.attack).to eq(0)
   end
   it "防御力が５上昇する" do
     expect(women.defence).to eq(5)
