@@ -7,7 +7,8 @@ class WizardSkill < Skill
     checked_skill.name
   end
 
-private
+  private
+
   def checked_skill
     return WizardManSkill.new if sex.name == "men"
     WizardWomanSkill.new if sex.name == "women"
