@@ -4,7 +4,7 @@ require_relative "../../jobs/warrior"
 describe "Man" do
   let(:men) { Man.new }
   it "攻撃力が５上昇する" do
-    expect(men.offence).to eq(5)
+    expect(men.attack).to eq(5)
   end
   it "防御力は変わらない" do
     expect(men.defence).to eq(0)
