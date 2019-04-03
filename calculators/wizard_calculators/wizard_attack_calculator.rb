@@ -1,4 +1,4 @@
-require_relative "../attack_calculator"
+require_relative '../attack_calculator'
 
 class WizardAttackCalculator < AttackCalculator
 

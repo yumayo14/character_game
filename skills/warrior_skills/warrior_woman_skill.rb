@@ -1,5 +1,5 @@
 class WarriorWomanSkill
   def name
-    "ビッグバン"
+    'ビッグバン'
   end
 end

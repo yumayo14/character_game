@@ -1,5 +1,5 @@
 class WizardWomanSkill
   def name
-    "メラミ"
+    'メラミ'
   end
 end
