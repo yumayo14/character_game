@@ -10,6 +10,7 @@ class FighterSkill < Skill
 private
   def checked_skill
     return MaleFighterSkill.new if sex.name == "men"
+
     FemaleFighterSkill.new if sex.name == "women"
   end
 end
