@@ -8,4 +8,5 @@ gem 'rspec'
 gem 'pry-byebug'
 gem 'rake', '~> 12'
 gem 'rubocop', require: false
+gem 'yard'
 # gem "rails"
