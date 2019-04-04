@@ -1,9 +1,9 @@
-require_relative "../equipment"
+require_relative '../equipment'
 
 class Glove < Equipment
   attr_reader :name
   def initialize
-    @name = "glove"
+    @name = 'glove'
   end
 
   def attack

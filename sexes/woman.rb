@@ -1,9 +1,9 @@
-require_relative "../sex.rb"
+require_relative '../sex.rb'
 
 class Woman < Sex
   attr_reader :name
   def initialize
-    @name = "women"
+    @name = 'women'
   end
 
   def attack

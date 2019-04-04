@@ -1,9 +1,9 @@
-require_relative "../element.rb"
+require_relative '../element.rb'
 
 class Wind < Element
   attr_reader :name
   def initialize
-    @name = "wind"
+    @name = 'wind'
   end
 
   def attack

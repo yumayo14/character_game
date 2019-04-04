@@ -1,5 +1,5 @@
 class WizardManSkill
   def name
-    "ベギラマ"
+    'ベギラマ'
   end
 end
