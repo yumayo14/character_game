@@ -1,5 +1,7 @@
 require_relative '../../sexes/man.rb'
 require_relative '../../jobs/warrior'
+require_relative '../../jobs/wizard'
+require_relative '../../jobs/fighter'
 
 describe 'Man' do
   let(:men) { Man.new }
@@ -15,14 +17,20 @@ describe 'Man' do
     context '戦士の場合' do
       let(:warrior) { Warrior.new(sex: men, element: element, equipment: equipment) }
       it 'スキルがギガスラッシュ' do
-        expect(warrior.skill).to eq('ギガスラッシュ')
+        expect(warrior.skill).to eq 'ギガスラッシュ'
       end
     end
     context '魔法使いの場合' do
-      it 'スキルがベギラマ'
+      let(:wizard) { Wizard.new(sex: men, element: element, equipment: equipment) }
+      it 'スキルがベギラマ' do
+        expect(wizard.skill).to eq 'ベギラマ'
+      end
     end
     context '武闘家の場合' do
-      it 'スキルがブースト'
+      let(:fighter) { Fighter.new(sex: men, element: element, equipment: equipment) }
+      it 'スキルがブースト' do
+        expect(fighter.skill).to eq 'ブースト'
+      end
     end
   end
 end
