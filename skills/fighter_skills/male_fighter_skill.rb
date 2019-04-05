@@ -1,5 +1,5 @@
 class MaleFighterSkill
   def name
-    "ブースト"
+    'ブースト'
   end
 end
