@@ -1,5 +1,5 @@
 class FemaleFighterSkill
   def name
-    'カウンター'
+    "カウンター"
   end
 end
