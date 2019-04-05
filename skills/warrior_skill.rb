@@ -10,8 +10,8 @@ class WarriorSkill < Skill
   private
 
   def checked_skill
-    return WarriorManSkill.new if sex.name == 'men'
+    return WarriorManSkill.new if sex.name == 'man'
 
-    WarriorWomanSkill.new if sex.name == 'women'
+    WarriorWomanSkill.new if sex.name == 'woman'
   end
 end
