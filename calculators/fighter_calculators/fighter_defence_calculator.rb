@@ -1,7 +1,9 @@
 require_relative '../defence_calculator'
 
 class FighterDefenceCalculator < DefenceCalculator
-private
+
+  private
+
   def correction
     equipment.fighter_correction
   end
