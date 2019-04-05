@@ -1,6 +1,6 @@
 require_relative '../skill'
-require_relative 'fighter_skills/male_fighter_skill'
-require_relative 'fighter_skills/female_fighter_skill'
+require_relative 'fighter_skills/fighter_man_skill'
+require_relative 'fighter_skills/fighter_woman_skill'
 
 class FighterSkill < Skill
   def name
@@ -9,8 +9,8 @@ class FighterSkill < Skill
 
 private
   def checked_skill
-    return MaleFighterSkill.new if sex.name == 'man'
+    return FighterManSkill.new if sex.name == 'man'
 
-    FemaleFighterSkill.new if sex.name == 'woman'
+    FighterWomanSkill.new if sex.name == 'woman'
   end
 end

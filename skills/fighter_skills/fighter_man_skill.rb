@@ -1,4 +1,4 @@
-class MaleFighterSkill
+class FighterManSkill
   def name
     'ブースト'
   end
