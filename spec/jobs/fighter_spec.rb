@@ -11,7 +11,7 @@ describe "Fighter" do
         expect(sex.attack).to eq 5
       end
       it "スキルがブースト" do
-        expect(fighter.skill).to eq("ブースト")
+        expect(fighter.skill).to eq "ブースト"
       end
       context "属性が異なる場合" do
         context "風の場合" do
@@ -166,7 +166,7 @@ describe "Fighter" do
         expect(sex.defence).to eq 5
       end
       it "スキルがカウンター" do
-        expect(fighter.skill).to eq("カウンター")
+        expect(fighter.skill).to eq "カウンター"
       end
       context "属性が異なる場合" do
         context "風の場合" do
