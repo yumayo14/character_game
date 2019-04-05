@@ -1,7 +1,7 @@
-require_relative '../job.rb'
-require_relative '../skills/fighter_skill'
-require_relative '../calculators/fighter_calculators/fighter_attack_calculator.rb'
-require_relative '../calculators/fighter_calculators/fighter_defence_calculator.rb'
+require_relative "../job.rb"
+require_relative "../skills/fighter_skill"
+require_relative "../calculators/fighter_calculators/fighter_attack_calculator.rb"
+require_relative "../calculators/fighter_calculators/fighter_defence_calculator.rb"
 
 class Fighter < Job
   def attack
