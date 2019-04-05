@@ -6,10 +6,10 @@ require_relative '../../jobs/fighter'
 describe 'Man' do
   let(:man) { Man.new }
   it '攻撃力が５上昇する' do
-    expect(man.attack).to eq(5)
+    expect(man.attack).to eq 5
   end
   it '防御力は変わらない' do
-    expect(man.defence).to eq(0)
+    expect(man.defence).to eq 0
   end
   context '職業が異なる場合' do
     let(:element) { Wind.new }
