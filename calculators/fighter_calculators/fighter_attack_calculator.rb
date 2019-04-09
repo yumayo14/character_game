@@ -1,7 +1,9 @@
 require_relative '../attack_calculator'
 
 class FighterAttackCalculator < AttackCalculator
-private
+
+  private
+
   def correction
     element.fighter_correction
   end
