@@ -1,4 +1,4 @@
-class FemaleFighterSkill
+class FighterWomanSkill
   def name
     'カウンター'
   end

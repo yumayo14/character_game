@@ -3,7 +3,7 @@ require_relative '../sex.rb'
 class Woman < Sex
   attr_reader :name
   def initialize
-    @name = 'women'
+    @name = 'woman'
   end
 
   def attack
