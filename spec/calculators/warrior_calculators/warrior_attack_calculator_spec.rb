@@ -5,7 +5,7 @@ describe 'WarriorAttackCalculator' do
   let(:warrior) { Warrior.new(sex: sex, element: element, equipment: equipment) }
   let(:attack_calculator) { WarriorAttackCalculator.new(warrior) }
   describe '#calculate' do
-    subject {attack_calculator.calculate}
+    subject { attack_calculator.calculate }
     context '性別が男性の場合' do
       let(:sex) { Man.new }
       context '属性が風の場合' do
