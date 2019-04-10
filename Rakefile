@@ -8,11 +8,11 @@ RSpec::Core::RakeTask.new do |t|
   t.verbose = false
 end
 YARD::Rake::YardocTask.new do |t|
-  t.files = %w[*.rb calculators/*.rb calculators/*/.rb elements/*.rb equipments/*.rb jobs/*.rb sexes/*.rb skills/*.rb]
+  t.files = %w(*.rb calculators/*.rb calculators/*/.rb elements/*.rb equipments/*.rb jobs/*.rb sexes/*.rb skills/*.rb)
 end
 
 desc 'rubocopとrspecを同時に走らせるタスク'
-task strict_test: [:spec, :rubocop]
+task strict_test: %i(spec rubocop)
 
 desc 'strict_testの後にドキュメントを作成するタスク'
-task strict_test_with_docs: [:spec, :rubocop, :yard]
+task strict_test_with_docs: %i(spec rubocop yard)
