@@ -1,4 +1,3 @@
-require_relative 'job.rb'
 require_relative 'sex.rb'
 require_relative 'sexes/man.rb'
 require_relative 'sexes/woman.rb'
