@@ -1,7 +1,6 @@
 require_relative '../attack_calculator'
 
 class FighterAttackCalculator < AttackCalculator
-
   private
 
   def correction
