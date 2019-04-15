@@ -1,5 +1,5 @@
 LineLength:
-  Max: 120
+  Max: 150
 
 Metrics/BlockLength:
   Exclude:
