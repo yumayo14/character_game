@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../jobs/wizard.rb'
 require_relative '../../../calculators/wizard_calculators/wizard_attack_calculator'
 

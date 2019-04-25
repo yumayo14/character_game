@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'sex.rb'
 require_relative 'sexes/man.rb'
 require_relative 'sexes/woman.rb'

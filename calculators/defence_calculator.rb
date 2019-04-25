@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class DefenceCalculator
   attr_reader :sex, :element, :equipment
   def initialize(job)

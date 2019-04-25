@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'job.rb'
 require_relative 'character_factory.rb'
 require_relative 'character_checker.rb'

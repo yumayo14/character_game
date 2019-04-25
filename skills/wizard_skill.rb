@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../skill.rb'
 require_relative 'wizard_skills/wizard_man_skill.rb'
 require_relative 'wizard_skills/wizard_woman_skill.rb'
