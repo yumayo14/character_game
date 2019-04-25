@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Equipment
   def attack
     raise NotImplementedError, "You must implement #{self.class}##{__method__}"

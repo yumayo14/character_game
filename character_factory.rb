@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'jobs/fighter'
 require_relative 'jobs/warrior'
 require_relative 'jobs/wizard'

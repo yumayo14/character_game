@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../job.rb'
 require_relative '../skills/fighter_skill'
 require_relative '../calculators/fighter_calculators/fighter_attack_calculator.rb'

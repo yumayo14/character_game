@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../equipments/sword.rb'
 
 describe 'Sword' do

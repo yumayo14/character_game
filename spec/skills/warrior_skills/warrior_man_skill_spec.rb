@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../skills/warrior_skills/warrior_man_skill.rb'
 
 describe 'WarriorManSkill' do

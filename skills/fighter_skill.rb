@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../skill'
 require_relative 'fighter_skills/fighter_man_skill'
 require_relative 'fighter_skills/fighter_woman_skill'

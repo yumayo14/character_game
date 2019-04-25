@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../elements/wind.rb'
 
 describe 'Wind' do
